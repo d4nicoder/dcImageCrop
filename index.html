@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-		<script type="text/javascript" src="/areaselect/static/areaselect.js"></script>
-        <script type="text/javascript" src="/areaselect/static/controller.js"></script>
+		<script type="text/javascript" src="./static/dcimagecrop.js"></script>
+        <script type="text/javascript" src="./static/controller.js"></script>
 		<link rel="stylesheet" href="/notifications/static/estilo.css" />
 	</head>
 
@@ -18,7 +18,7 @@
 		<h1>Selección de porción de imagen</h1>
 		<div style="position:relative;display:block;margin-bottom: 10px;width: 250px;" ng-controller="pruebas">
             <div style="position: relative;display:inline-block;width:800px;">
-                <img src="/areaselect/static/tux.jpg" id="'1'" style="width:800px;height:auto;" dc-image-crop="activo" dc-aspect="'1:1'" />
+                <img src="./static/tux.jpg" id="'1'" style="width:800px;height:auto;" dc-image-crop="activo" dc-aspect="'1:1'" />
             </div>
             <div style="position: fixed;display:block; right:10px;top:10px;">
                 <button ng-click="activar()">{{txtBtn}}</button>
