@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cropping de imágenes</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="/areaselect/static/areaselect.js"></script>
+        <script type="text/javascript" src="/areaselect/static/controller.js"></script>
+		<link rel="stylesheet" href="/notifications/static/estilo.css" />
+	</head>
+
+	<body ng-app="test">
+		<h1>Selección de porción de imagen</h1>
+		<div style="position:relative;display:block;margin-bottom: 10px;width: 250px;" ng-controller="pruebas">
+            <div style="position: relative;display:inline-block;width:800px;">
+                <img src="/areaselect/static/tux.jpg" id="'1'" style="width:800px;height:auto;" dc-image-crop="activo" dc-aspect="'1:1'" />
+            </div>
+            <div style="position: fixed;display:block; right:10px;top:10px;">
+                <button ng-click="activar()">{{txtBtn}}</button>
+                <dc-crop-preview dc-crop-data="data" width="200"></as-canvas>
+            </div>
+		</div>
+	</body>
+</html>
